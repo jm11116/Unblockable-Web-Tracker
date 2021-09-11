@@ -10,7 +10,7 @@ This is a tracking program written in PHP by John Micallef. By installing it you
 
 Because the script runs on the server and not in the browser, good luck blocking it!
 
-This is my most well-written project to date, using everything I know about design patterns to produce code that is so readable that even non-programmers should be able to get the jist of what it does by perusing the source.
+This is my most well-written project to date, using everything I know about design patterns to produce code that is so readable that even non-programmers should be able to get the gist of what it does by perusing the source.
 
 Installation:
 * Put the ’tracker’ folder into your website’s home directory.
