@@ -1,0 +1,11 @@
+<settings>
+    <website>www.youwebsite.com</website>
+    <userstack_key></userstack_key>
+    <ipstack_key></ipstack_key>
+    <timezone>Australia/Sydney</timezone>
+    <server>localhost</server>
+    <database></database>
+    <username></username>
+    <blocked_ips></blocked_ips>
+    <no_track_query>no_track</no_track_query>
+</settings>
