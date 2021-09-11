@@ -36,7 +36,11 @@ Installation:
 * You can put in blocked IPs between the <blocked_ips> for IPs that you don’t want to track, like your own, separated by commas.
 * You can change the query string that will prevent your visits from being tracked for 30 days here as well (default is: ’no_track’, so ‘?no_track’).
 * You’ll then need to include the tracker on each of your website’s page with the following code: 
-    * ‘<?php include “$_SERVER[‘DOCUMENT_ROOT’] . “/tracker/tracker.php; ?>’.
+```` 
+```
+‘<?php include “$_SERVER[‘DOCUMENT_ROOT’] . “/tracker/tracker.php; ?>’.
+```` 
+```
 * You’ll then need to open up ‘dbp.php’ in the ’tracking_info’ folder and enter the password to your tracking database. This will be saved outside your website’s document root if you’ve followed the instructions, so it can’t be accessed by someone without server access.
 * You should then be good to go. Enjoy!
 
