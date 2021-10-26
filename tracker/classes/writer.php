@@ -16,7 +16,7 @@ class Writer extends Tracker {
         $this->username = $this->settings->username;
     }
     private function connect(){
-        require_once dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/dbp.php";
+        require_once dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/tracking_info/dbp.php";
         $this->connection = new mysqli($this->servername, $this->username, $password, $this->database);
         if ($this->connection->connect_error) {
             if (!file_exists("log.txt")){
