@@ -33,15 +33,13 @@ class Tracker extends Settings {
     }
     private function getUserAgentInfo(){
         $this->user_agent = $_SERVER['HTTP_USER_AGENT'];
-        $this->userstack_url = "http://api.userstack.com/detect?access_key=" . 
-            $this->settings->userstack_key . "&ua=" . $this->user_agent . "&output=xml";
+        $this->userstack_url = "http://api.userstack.com/detect?access_key=".$this->settings->userstack_key . "&ua=" . $this->user_agent . "&output=xml";
         $userstack_xml = simplexml_load_file($this->userstack_url);
         $this->os = $userstack_xml->os->name;
         $this->browser = $userstack_xml->browser->name;
     }
     private function getIPInfo(){
-        $this->ipstack_url = "http://api.ipstack.com/" . $this->address . "?access_key=" . 
-            $this->settings->ipstack_key . "&output=xml";
+        $this->ipstack_url = "http://api.ipstack.com/" . $this->address . "?access_key=" . $this->settings->ipstack_key . "&output=xml";
         $this->ipstack_xml = simplexml_load_file($this->ipstack_url);
         $this->country = $this->ipstack_xml->country_name;
         $this->state = $this->ipstack_xml->region_name;

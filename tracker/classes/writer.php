@@ -11,13 +11,13 @@ class Writer extends Tracker {
         $this->connect();
     }
     private function getCredentials(){
-        $xml = simplexml_load_file(dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/tracking_info/tracking_settings.xml");
+        $xml = simplexml_load_file($_SERVER["DOCUMENT_ROOT"] . "/../tracking_info/tracking_settings.xml");
         $this->servername = $xml->servername;
         $this->database = $xml->database;
         $this->username = $xml->username;
     }
     private function connect(){
-        require_once dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/tracking_info/dbp.php";
+        require_once $_SERVER["DOCUMENT_ROOT"] . "/../tracking_info/dbp.php";
         $this->connection = new mysqli($this->servername, $this->username, $password, $this->database);
         if ($this->connection->connect_error) {
             if (!file_exists("log.txt")){
