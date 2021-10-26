@@ -7,7 +7,7 @@ class Settings extends IPGetter {
         $this->getSettings();
     }
     private function getSettings(){
-        $this->settings = simplexml_load_file(dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/tracking_info/tracking_settings.xml");
+        $this->settings = simplexml_load_file($_SERVER["DOCUMENT_ROOT"] . "/../tracking_info/tracking_settings.xml");
     }
 }
 

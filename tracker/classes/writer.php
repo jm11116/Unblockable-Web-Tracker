@@ -11,9 +11,10 @@ class Writer extends Tracker {
         $this->connect();
     }
     private function getCredentials(){
-        $this->servername = $this->settings->servername;
-        $this->database = $this->settings->database;
-        $this->username = $this->settings->username;
+        $xml = simplexml_load_file(dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/tracking_info/tracking_settings.xml");
+        $this->servername = $xml->servername;
+        $this->database = $xml->database;
+        $this->username = $xml->username;
     }
     private function connect(){
         require_once dirname($_SERVER["DOCUMENT_ROOT"], 1) . "/tracking_info/dbp.php";
