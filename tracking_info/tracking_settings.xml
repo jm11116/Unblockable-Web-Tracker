@@ -1,5 +1,5 @@
 <settings>
-    <website>www.yourwebsite.com</website>
+    <website>www.youwebsite.com</website>
     <userstack_key></userstack_key>
     <ipstack_key></ipstack_key>
     <timezone>Australia/Sydney</timezone>
@@ -7,7 +7,5 @@
     <database></database>
     <username></username>
     <blocked_ips></blocked_ips>
-    <email>all</email> <!--Add pages you want email alerts about between <email> tag with file extension, comma delimited OR write 'all' (without quotes) to get alerts for every page-->
-    <alert_email></alert> <!--Send email alerts to...-->
     <no_track_query>no_track</no_track_query>
 </settings>
