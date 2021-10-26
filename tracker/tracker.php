@@ -10,7 +10,7 @@ $check = new BlockChecker();
 if ($check->blocked == "true"){
     exit();
 } else {
-    new Mailer(); //Calls parent, which is Writer, which calls their parents
+    new Writer();
 }
 
 ?>

@@ -2,7 +2,6 @@
 
 class Mailer extends Writer {
     public function __construct(){
-        parent::__construct();
         $this->checkAlert();
     }
     private function checkAlert(){
